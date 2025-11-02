@@ -1,7 +1,8 @@
 name: 04a - Different shells
 on: 
   push:
-      branches: ['main']
+      branches: 
+        - main
   workflow_dispatch:
 jobs:
   build:
