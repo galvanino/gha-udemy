@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Operators demonstration
+        id: operatorsDemo
         run: |
           echo "${{ 'Hello, ' }} ${{ 'world!' }}"
           echo "Comparison: 10 > 5 = ${{ 10 > 5 }}"
