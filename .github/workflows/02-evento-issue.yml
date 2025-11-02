@@ -1,13 +1,10 @@
 name: 02 Evento issue
 
 on:
+  push:
   issues:
     types: 
       - opened
-  push:
-    branches:
-      - main
-
 jobs:
   evento-issue:
     runs-on: ubuntu-latest
