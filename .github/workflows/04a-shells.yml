@@ -1,17 +1,17 @@
 name: 04a - Different shells
 on: 
-    push:
-        branches: ["main"]
-    workflow_dispatch:
+  push:
+      branches: ['main']
+  workflow_dispatch:
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Bash shell
-            shell: bash
-            run: echo "This is running on bash shell"
-          - name: sh shell
-            shell: sh
-            run: echo "This is running on sh shell"
-          - name: Default shell
-            run: echo "This is running on default shell"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bash shell
+        shell: bash
+        run: echo "This is running on bash shell"
+      - name: sh shell
+        shell: sh
+        run: echo "This is running on sh shell"
+      - name: Default shell
+        run: echo "This is running on default shell"
