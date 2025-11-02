@@ -1,0 +1,16 @@
+name: 02 Evento issue
+
+on:
+  issues:
+    types: 
+      - opened
+  push:
+    branches:
+      - main
+
+jobs:
+  evento-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evento issue
+        run: echo "Se ha abierto un nuevo issue!"
