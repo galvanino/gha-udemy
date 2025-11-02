@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Operators demonstration
         run: |
-          echo "${{ 'Hello, ' }} ${{ 'world!' }}""
+          echo "${{ 'Hello, ' }} ${{ 'world!' }}"
           echo "Comparison: 10 > 5 = ${{ 10 > 5 }}"
           echo "Logical AND: true && false = ${{ true && false }}"
       - name: inspect github context
